@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="co.neprass.managefarm.Fragment.MenuCropFragment">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="400dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/stick"
+        android:rotation="-5"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <co.neprass.managefarm.view.FontButtonRegular
+            android:id="@+id/addCrop"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/arrow_wood"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:gravity="left|center_vertical"
+            android:rotation="-4"
+            android:text="إضافة بطاقة مزارع "
+            android:textColor="@color/black"
+
+
+            />
+
+        <co.neprass.managefarm.view.FontButtonRegular
+            android:id="@+id/getCrop"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/arrow_wood"
+            android:text="بطاقات المزارعين"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:gravity="left|center_vertical"
+
+
+            />
+
+        <co.neprass.managefarm.view.FontButtonRegular
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/arrow_wood"
+            android:rotation="4"
+            android:text="الجولات الإرشادية"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:gravity="left|center_vertical"
+
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:alpha="0.5"
+            android:background="@drawable/plantt"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

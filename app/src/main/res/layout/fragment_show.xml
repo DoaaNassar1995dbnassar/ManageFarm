@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.neprass.managefarm.Fragment.ShowFragment">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <co.neprass.managefarm.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="البيانات الاساسية "
+                    android:textColor="@color/colorAccent" />
+
+
+                <co.neprass.managefarm.view.FontEditTextViewRegular
+                    android:id="@+id/idNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:gravity="right"
+                    android:hint="رقم الهوية"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+
+
+                    />
+
+                <co.neprass.managefarm.view.FontTextViewRegular
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    android:gravity="right"
+                    android:hint="تاريخ الميلاد"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+
+
+                    />
+
+                <co.neprass.managefarm.view.FontEditTextViewRegular
+                    android:id="@+id/name_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:gravity="right"
+                    android:hint="الاسم الأول"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+
+                    />
+
+                <co.neprass.managefarm.view.FontEditTextViewRegular
+                    android:id="@+id/name_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:gravity="right"
+                    android:hint="اسم الأب"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <co.neprass.managefarm.view.FontEditTextViewRegular
+                    android:id="@+id/name_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:gravity="right"
+                    android:hint="اسم الجد"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <co.neprass.managefarm.view.FontEditTextViewRegular
+                    android:id="@+id/name_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:gravity="right"
+                    android:hint="اسم العائلة"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+
+
+                    />
+
+
+                <co.neprass.managefarm.view.FontEditTextViewRegular
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:gravity="right"
+                    android:hint="رقم الجوال"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+
+
+                    />
+
+
+                <co.neprass.managefarm.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="المحافظة  : "
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <co.neprass.managefarm.view.FontTextViewRegular
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:text="اختر... " />
+
+                    <LinearLayout
+                        android:id="@+id/cityLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+
+                        >
+
+                        <ListView
+                            android:id="@+id/listCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:dividerHeight="1dp"
+                            android:divider="@color/colorPrimary"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <co.neprass.managefarm.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="المنطقة  : " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <co.neprass.managefarm.view.FontTextViewRegular
+                        android:id="@+id/sector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:text="اختر... " />
+
+                    <LinearLayout
+                        android:id="@+id/sectorLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+
+                        >
+
+                        <ListView
+                            android:id="@+id/listSector"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:dividerHeight="1dp"
+                            android:divider="@color/colorPrimary"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <co.neprass.managefarm.view.FontEditTextViewRegular
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:gravity="right"
+                    android:hint="أقرب معلم"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+
+                    />
+
+                <co.neprass.managefarm.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الحالة الاجتماعية  : "
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <co.neprass.managefarm.view.FontTextViewRegular
+                        android:id="@+id/social"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:text="اختر... " />
+
+                    <LinearLayout
+                        android:id="@+id/socialLinear"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ListView
+                        android:id="@+id/listSocial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dividerHeight="1dp"
+                        android:divider="@color/colorPrimary"
+                        />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <co.neprass.managefarm.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الجنس  : "
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <co.neprass.managefarm.view.FontTextViewRegular
+                        android:id="@+id/sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:text="اختر... " />
+
+                    <LinearLayout
+                        android:id="@+id/sexLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <ListView
+                            android:id="@+id/listSex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@color/colorPrimary"
+                            android:dividerHeight="1dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <co.neprass.managefarm.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="المؤهل العلمي  : "
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corner"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <co.neprass.managefarm.view.FontTextViewRegular
+                        android:id="@+id/qualification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:text="اختر... " />
+
+
+                    <LinearLayout
+                        android:id="@+id/qualificationLinear"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ListView
+                        android:dividerHeight="1dp"
+                        android:divider="@color/colorPrimary"
+                        android:id="@+id/listQualification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+
+
+                </LinearLayout>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="@dimen/sizeNext"
+                    android:layout_height="@dimen/sizeNext"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/next3"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:rotation="180"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

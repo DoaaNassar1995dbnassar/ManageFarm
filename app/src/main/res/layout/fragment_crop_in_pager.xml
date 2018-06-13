@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    tools:context="co.neprass.managefarm.Fragment.CropInPagerFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+
+        >
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="لا يوجد بيانات لعرضها" />
+
+        <!--<android.support.v7.app.AlertController.RecycleListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/list"-->
+        <!--&gt;-->
+
+        <!--</android.support.v7.app.AlertController.RecycleListView>-->
+    </FrameLayout>
+
+    <co.neprass.managefarm.view.FontButtonRegular
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/corner"
+        android:text="إضافة "
+        android:textColor="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="@dimen/sizeNext"
+        android:layout_height="@dimen/sizeNext"
+        android:background="@drawable/next3"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:rotation="180"
+
+
+        />
+</LinearLayout>

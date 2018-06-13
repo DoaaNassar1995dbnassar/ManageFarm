@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.neprass.managefarm.Fragment.LocalFarmFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        >
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_sync"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="رفع البيانات "
+            android:textColor="@color/colorAccent"
+            android:shadowDx="10"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+<co.neprass.managefarm.view.FontTextViewRegular
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="لا يوجد بيانات لرفعها  ...."
+    android:gravity="center"
+    android:visibility="gone"
+    />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

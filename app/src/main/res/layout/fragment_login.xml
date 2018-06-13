@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="co.neprass.managefarm.Activity.LoginFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="70dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="40dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <co.neprass.managefarm.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="حسابي"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18sp" />
+
+                <co.neprass.managefarm.view.FontEditTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_button"
+                    android:gravity="center"
+                    android:hint="اسم المستخدم"
+                    android:padding="7dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+
+                <co.neprass.managefarm.view.FontEditTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_button"
+                    android:gravity="center_horizontal"
+                    android:hint="كلمة المرور"
+                    android:padding="7dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+
+                <co.neprass.managefarm.view.FontButtonRegular
+
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/background_login"
+                    android:text="تسجيل الدخول "
+                    android:textSize="14sp"
+                    android:textColor="@color/white" />
+
+                <co.neprass.managefarm.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="نسيت كلمة المرور" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ellipse5"
+                android:src="@drawable/logooo" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,178 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.neprass.managefarm.Fragment.MaterialFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="آلات ومعدات "
+            android:textColor="@color/colorAccent" />
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نوع الآلة  : "
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <co.neprass.managefarm.view.FontTextViewRegular
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+                android:hint="اختر... "
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/typeLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                >
+
+                <ListView
+                    android:id="@+id/listType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1dp"
+                    android:divider="@color/colorPrimary"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نوع الملك  : "
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <co.neprass.managefarm.view.FontTextViewRegular
+                android:id="@+id/owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+                android:hint="اختر... "
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ownerLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                >
+
+                <ListView
+                    android:id="@+id/listOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1dp"
+                    android:divider="@color/colorPrimary"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <co.neprass.managefarm.view.FontEditTextViewRegular
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner"
+            android:hint="العدد"
+            android:inputType="number"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+
+            />
+
+        <co.neprass.managefarm.view.FontEditTextViewRegular
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner"
+            android:hint="ملاحظات"
+            android:paddingBottom="40dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textSize="14sp"
+
+            />
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:id="@+id/addNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/add_new"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_add"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:shadowDx="10"
+            android:text="إضافة آلة  "
+            android:textColor="@color/colorAccent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:divider="@color/white"
+            android:dividerHeight="3dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="@dimen/sizeNext"
+            android:layout_height="@dimen/sizeNext"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/next3"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:rotation="180"
+
+
+            />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

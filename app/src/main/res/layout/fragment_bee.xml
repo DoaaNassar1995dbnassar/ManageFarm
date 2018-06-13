@@ -1,0 +1,76 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="co.neprass.managefarm.Fragment.BeeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="خلايا النحل "
+            android:textColor="@color/colorAccent" />
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الصنف  : "
+
+            />
+
+
+        <co.neprass.managefarm.view.FontEditTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner"
+            android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+            android:enabled="false"
+            android:hint="اختر... "
+            android:padding="8dp"
+            android:textSize="14sp"
+
+            />
+
+
+
+
+
+        <co.neprass.managefarm.view.FontEditTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner"
+            android:gravity="right"
+            android:hint="العدد"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:inputType="number"
+
+            />
+
+
+        <co.neprass.managefarm.view.FontEditTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner"
+            android:gravity="right"
+            android:hint="الملاحظات"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:paddingBottom="50dp"
+            android:textSize="14sp"
+
+            />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

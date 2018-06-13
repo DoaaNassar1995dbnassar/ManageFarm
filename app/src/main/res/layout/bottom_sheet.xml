@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+
+        android:paddingRight="15dp">
+
+
+        <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:id="@+id/sheet_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="موافق"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+            android:visibility="gone" />
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:id="@+id/sheet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+            />
+
+        <co.neprass.managefarm.view.FontTextViewRegular
+            android:id="@+id/sheet_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="إلغاء"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+            android:visibility="gone" />
+
+
+
+
+
+    </FrameLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none"
+
+        />
+
+
+
+
+</LinearLayout>
